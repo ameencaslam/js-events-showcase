@@ -34,7 +34,7 @@
 }
 
 #passwordRequirements:not(.show) {
-  filter: grayscale(100);
+  filter: grayscale(100) !important;
 }
 
 #passwordRequirements,
