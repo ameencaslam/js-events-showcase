@@ -4,6 +4,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -81,6 +82,7 @@ body {
   padding: 0.4rem 0.7rem;
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-bottom: 1rem;
 }
 
 .event-example > p {
@@ -129,4 +131,8 @@ option {
 
 #onkeypress__input-box {
   width: 15rem;
+}
+
+#hamburger-nav {
+  display: none;
 }

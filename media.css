@@ -1,0 +1,57 @@
+@media (max-width: 1024px) {
+  .navbar__item:last-child:before {
+    display: none;
+  }
+
+  .navbar__link {
+    font-size: 12px;
+    width: 8.5rem;
+  }
+
+  .event-example > h3 {
+    font-size: 2em;
+  }
+
+  .event-example > p {
+    font-size: 1.5em;
+  }
+
+  input,
+  select,
+  option {
+    padding: 10px 5px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .body {
+    cursor: auto;
+  }
+  .cursor {
+    display: none;
+  }
+  .main-heading {
+    font-size: 2.8rem;
+  }
+
+  .header {
+    height: 0;
+  }
+
+  #mouse-events {
+    margin-top: 100vh;
+  }
+
+  .main-heading {
+    padding-bottom: 0;
+    height: 100vh;
+  }
+  #hamburger-nav {
+    display: block;
+  }
+
+  .event-container > h2 {
+    top: 0;
+  }
+}
