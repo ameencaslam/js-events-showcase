@@ -3,6 +3,8 @@
 /* General Styles */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -34,20 +36,19 @@ body {
   font-size: 3.5rem;
   color: black;
   background-color: white;
-  position: sticky;
-  top: 6rem;
+  position: fixed;
+  /* top: 6rem; */
   z-index: -99;
   padding-bottom: 2rem;
 }
 
 .event-container {
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+  padding-bottom: 30vh;
   background-color: white;
 }
-
 #mouse-events {
   padding-top: 0;
+  margin-top: 88vh;
 }
 
 .event-container > h2 {
@@ -60,7 +61,7 @@ body {
   padding: 25px 0;
   align-items: center;
   position: sticky;
-  top: 0;
+  top: 6rem;
   z-index: 10;
 }
 
@@ -81,6 +82,7 @@ body {
   padding: 0.4rem 0.7rem;
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-bottom: 1rem;
 }
 
 .event-example > p {
@@ -88,6 +90,7 @@ body {
   margin-top: 0.2rem;
   margin-bottom: 2.25rem;
   font-family: VT323;
+  text-align: center;
 }
 
 .sample-element {
@@ -124,8 +127,13 @@ option {
   font-size: 10rem;
   color: rgb(255, 255, 255);
   letter-spacing: 1rem;
+  text-align: center;
 }
 
 #onkeypress__input-box {
   width: 15rem;
+}
+
+#hamburger-nav {
+  display: none;
 }

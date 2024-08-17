@@ -14,11 +14,53 @@
     <link rel="stylesheet" href="cursor.css" />
     <link rel="stylesheet" href="passform.css" />
     <link rel="stylesheet" href="mode.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="hamburger.css" />
   </head>
   <body>
     <!-- cursor test start -->
     <div class="cursor"></div>
     <div id="home"></div>
+    <!-- hamburger navbar start-->
+    <nav role="navigation" id="hamburger-nav">
+      <div id="menuToggle">
+        <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+        <input type="checkbox" />
+
+        <!--
+    Some spans to act as a hamburger.
+    -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="#home">
+            <li>Home</li>
+          </a>
+          <a href="#mouse-events">
+            <li>Mouse Events</li>
+          </a>
+          <a href="#scroll-events">
+            <li>Scroll Events</li>
+          </a>
+          <a href="#keyboard-events">
+            <li>Keyboard Events</li>
+          </a>
+          <a href="#form-events">
+            <li>Form Events</li>
+          </a>
+          <a href="#touch-events">
+            <li>Touch Events</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <!-- hamburger navbar end -->
+
     <!-- navbar start-->
     <div class="header">
       <!-- <div class="header__logo">
