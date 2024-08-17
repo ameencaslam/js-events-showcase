@@ -97,5 +97,5 @@ confirmPassword.addEventListener("input", checkRequirements);
 form.onsubmit = function (event) {
   event.preventDefault(); // Prevent the form from actually submitting
   alert("Form submitted successfully!");
-  window.location.href = "events.html";
+  window.location.href = "index.html";
 };
