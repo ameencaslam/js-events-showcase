@@ -70,3 +70,8 @@
   /* background-color: black; */
   mix-blend-mode: difference;
 }
+
+#toggleConsoleButton:not(:hover)::after {
+  content: "CSL";
+  font-size: 1rem;
+}
