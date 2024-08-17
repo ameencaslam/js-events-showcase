@@ -55,3 +55,79 @@
     top: 0;
   }
 }
+
+@media (max-width: 680px) {
+  .main-heading {
+    font-size: 2.4rem;
+  }
+
+  #menuToggle span {
+    width: 25px !important;
+    height: 2.5px !important;
+  }
+
+  #toggleConsoleButton {
+    transform: scale(0.8);
+  }
+
+  #toggleModeButton {
+    transform: scale(0.8);
+  }
+
+  .event-container > h2 {
+    font-size: 2.2rem;
+  }
+
+  #menuToggle {
+    top: 40px !important;
+  }
+
+  .event-example {
+    transform: scale(0.8);
+  }
+
+  #menu li {
+    padding: 15px 0;
+    font-size: 16px !important;
+  }
+
+  #consoleDiv {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 520px) {
+  .main-heading {
+    font-size: 1.8rem;
+  }
+
+  .event-container > h2 {
+    font-size: 1.7rem;
+  }
+
+  #menuToggle {
+    top: 35px !important;
+  }
+
+  .end-card > h1 {
+    font-size: 6rem;
+  }
+
+  #menuToggle {
+    top: 33px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .event-container > h2 {
+    font-size: 1.3rem;
+  }
+
+  #menuToggle {
+    top: 30px !important;
+  }
+
+  .main-heading {
+    font-size: 1.6rem;
+  }
+}
