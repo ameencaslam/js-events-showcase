@@ -1,10 +1,10 @@
 #menuToggle {
   display: block;
   position: fixed;
-  top: 50px;
+  top: 45px;
   left: 50px;
 
-  z-index: 99999;
+  z-index: 9999;
 
   -webkit-user-select: none;
   user-select: none;
@@ -13,12 +13,11 @@
 #menuToggle a {
   text-decoration: none;
   color: black;
-
-  transition: color 0.3s ease;
+  transition: 0.3s ease;
 }
 
-#menuToggle a:hover {
-  color: tomato;
+#menuToggle a {
+  scale: (1.3);
 }
 
 #menuToggle input {
@@ -47,7 +46,7 @@
   margin-bottom: 5px;
   position: relative;
 
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(118, 118, 118);
   border-radius: 3px;
 
   z-index: 1;
@@ -73,7 +72,7 @@
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #000000;
 }
 
 /*
@@ -98,12 +97,13 @@
 #menu {
   position: absolute;
   width: 300px;
+  height: 110vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
 
-  background: #ededed;
-  list-style-type: none;
+  background: #ffffff;
+  list-style-type: circle;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
 
@@ -111,11 +111,12 @@
   transform: translate(-100%, 0);
 
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  border: 6px solid;
 }
 
 #menu li {
-  padding: 10px 0;
-  font-size: 22px;
+  padding: 15px 0;
+  font-size: 19px;
 }
 
 /*
