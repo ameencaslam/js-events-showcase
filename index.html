@@ -49,6 +49,11 @@
               ><span>Form Events</span></a
             >
           </li>
+          <li class="navbar__item">
+            <a href="#touch-events" class="navbar__link"
+              ><span>Touch Events</span></a
+            >
+          </li>
         </ul>
       </nav>
     </div>
@@ -78,7 +83,7 @@
         <p>Triggered when a user clicks an element.</p>
         <button
           class="event-trigger button-30"
-          onclick="console.log('You clicked me!')"
+          onclick="console.log('You clicked the button')"
         >
           Click me!
         </button>
@@ -88,7 +93,7 @@
         <p>Triggered when a user double-clicks an element.</p>
         <button
           class="event-trigger button-30"
-          ondblclick="console.log('You double-clicked me!')"
+          ondblclick="console.log('You double-clicked the button')"
         >
           Double-click me!
         </button>
@@ -118,7 +123,7 @@
         <p>Triggered when a user moves the mouse pointer over an element.</p>
         <div
           class="event-trigger sample-element"
-          onmouseover="console.log('You moved over me!')"
+          onmouseover="console.log('You moved over the element')"
         ></div>
       </div>
       <div class="event-example autoBlur">
@@ -128,7 +133,7 @@
         </p>
         <div
           class="event-trigger sample-element"
-          onmouseout="console.log('You moved away from me!')"
+          onmouseout="console.log('You moved away from the element')"
         ></div>
       </div>
     </div>
@@ -290,6 +295,19 @@
             Login
           </button>
         </form>
+      </div>
+    </div>
+    <div class="event-container" id="touch-events">
+      <h2 class="sound-title retro hover-this">Touch Events</h2>
+      <div class="event-example autoBlur">
+        <h3>ontouchstart</h3>
+        <p>Triggered when a finger is placed on a touch screen</p>
+        <div
+          class="event-trigger sample-element"
+          ontouchstart="console.log('You touched an Element')"
+        >
+          <p>Touch me!</p>
+        </div>
       </div>
     </div>
     <div class="end-card deep sound-title">
