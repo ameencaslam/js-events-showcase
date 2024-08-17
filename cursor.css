@@ -1,0 +1,20 @@
+html,
+body {
+  cursor: none; /* Hide default cursor */
+}
+
+.cursor {
+  pointer-events: none; /* Ensure it doesn’t interfere with mouse events */
+  position: fixed;
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  background-color: #fff;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  z-index: 10000;
+}
+
+.hover-this {
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}

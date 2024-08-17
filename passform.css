@@ -1,0 +1,84 @@
+#passwordRequirements {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.requirement {
+  color: red;
+  margin: 5px 0;
+  padding-left: 20px; /* Space for tick and cross */
+  position: relative; /* For absolute positioning of tick and cross */
+}
+
+.requirement::before {
+  content: ""; /* Default to empty */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px; /* Adjust size as needed */
+}
+
+.requirement.valid {
+  color: green;
+}
+
+.requirement.valid::before {
+  content: "✔"; /* Tick mark for valid */
+  color: green;
+}
+
+.requirement.invalid::before {
+  content: "✘"; /* Cross mark for invalid */
+  color: red;
+}
+
+#passwordRequirements:not(.show) {
+  filter: grayscale(100);
+}
+
+#passwordRequirements,
+#submitButton {
+  opacity: 0.3; /* Low opacity when fields are empty */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  pointer-events: none; /* Prevent interaction when hidden */
+}
+
+.show {
+  opacity: 1 !important; /* Full opacity when there is text in the fields */
+  pointer-events: auto; /* Allow interaction when shown */
+}
+
+.validation__pass-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.validation__pass-div input {
+  margin: 0.5rem;
+  box-sizing: border-box;
+  width: 70%;
+  width: 11rem;
+}
+
+.requirement {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+#passwordForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#submitButton {
+  margin-top: 1rem;
+}
+
+#submitButton:enabled {
+  opacity: 100%;
+  pointer-events: all;
+}

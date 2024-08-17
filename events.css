@@ -1,0 +1,127 @@
+/* Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap");
+/* General Styles */
+html {
+  scroll-behavior: smooth;
+  transition: filter 0.5s;
+}
+
+body {
+  font-family: monospace;
+  margin: 0;
+  /* overflow: scroll; */
+}
+
+#home {
+  height: 0;
+  width: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main-heading {
+  width: 100%;
+  height: 87.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  color: black;
+  background-color: white;
+  position: sticky;
+  top: 6rem;
+  z-index: -99;
+  padding-bottom: 2rem;
+}
+
+.event-container {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  background-color: white;
+}
+
+#mouse-events {
+  padding-top: 0;
+}
+
+.event-container > h2 {
+  color: white;
+  letter-spacing: 4.5px;
+  text-align: center;
+  font-size: 3rem;
+  font-family: Raleway;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 25px 0;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.event-example {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 5rem 0;
+}
+
+.event-example > h3 {
+  font-size: 2.2em;
+  color: white;
+  background: black;
+  padding: 0.4rem 0.7rem;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.event-example > p {
+  font-size: 1.8em;
+  margin-top: 0.2rem;
+  margin-bottom: 2.25rem;
+  font-family: VT323;
+}
+
+.sample-element {
+  text-align: center;
+  border-radius: 6px;
+  height: 150px;
+  width: 150px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+input,
+select,
+option {
+  border: 1px solid;
+  padding: 10px 12px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 15px;
+  cursor: none;
+  text-align: center;
+}
+
+.end-card {
+  width: 100%;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.end-card > h1 {
+  font-size: 10rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1rem;
+}
+
+#onkeypress__input-box {
+  width: 15rem;
+}

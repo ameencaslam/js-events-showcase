@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  padding: 0 2rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.03);
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 14px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  justify-content: center;
+}
+.navbar__menu {
+  position: relative;
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar__link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  color: #fff;
+  transition: 250ms ease all;
+  text-decoration: none;
+  width: 10rem;
+  text-transform: uppercase;
+  transition: 500ms ease all;
+  cursor: none;
+}
+
+.navbar__link:hover {
+  text-shadow: 0px 0px 5px white, 0px 0px 20px white;
+}
+
+.navbar:not(:hover) .navbar__link:focus span,
+.navbar__link:hover span {
+  opacity: 1;
+  transform: translate(0);
+}
+.navbar__item:last-child:before {
+  content: "";
+  position: absolute;
+  left: -7rem;
+  margin-left: 5rem;
+  bottom: -0.5rem;
+  height: 0.6rem;
+  width: 2px;
+  background: #ffffff;
+  box-shadow: 0 -0.5rem 10px #ffffff, 0 -0.5rem #ffffff, 0 0 3rem 0.5rem #ffffff,
+    2rem 0 0 rgba(255, 255, 255, 0.4), -3rem 0 0 rgba(255, 255, 255, 0.4),
+    6rem 0 0 rgba(255, 255, 255, 0.4), -6rem 0 0 rgba(255, 255, 255, 0.4),
+    9rem 0 0 rgba(255, 255, 255, 0.4), -9rem 0 0 rgba(255, 255, 255, 0.4),
+    12rem 0 0 rgba(255, 255, 255, 0.4), -12rem 0 0 rgba(255, 255, 255, 0.4),
+    15rem 0 0 rgba(255, 255, 255, 0.4), -15rem 0 0 rgba(255, 255, 255, 0.4),
+    18rem 0 0 rgba(255, 255, 255, 0.4), -18rem 0 0 rgba(255, 255, 255, 0.4),
+    21rem 0 0 rgba(255, 255, 255, 0.4), -21rem 0 0 rgba(255, 255, 255, 0.4),
+    24rem 0 0 rgba(255, 255, 255, 0.4), -24rem 0 0 rgba(255, 255, 255, 0.4),
+    27rem 0 0 rgba(255, 255, 255, 0.4), -27rem 0 0 rgba(255, 255, 255, 0.4),
+    30rem 0 0 rgba(255, 255, 255, 0.4), -30rem 0 0 rgba(255, 255, 255, 0.4),
+    33rem 0 0 rgba(255, 255, 255, 0.4), -33rem 0 0 rgba(255, 255, 255, 0.4),
+    36rem 0 0 rgba(255, 255, 255, 0.4), -36rem 0 0 rgba(255, 255, 255, 0.4),
+    39rem 0 0 rgba(255, 255, 255, 0.4), -39rem 0 0 rgba(255, 255, 255, 0.4),
+    42rem 0 0 rgba(255, 255, 255, 0.4), -42rem 0 0 rgba(255, 255, 255, 0.4),
+    45rem 0 0 rgba(255, 255, 255, 0.4), -45rem 0 0 rgba(255, 255, 255, 0.4),
+    48rem 0 0 rgba(255, 255, 255, 0.4), -48rem 0 0 rgba(255, 255, 255, 0.4),
+    51rem 0 0 rgba(255, 255, 255, 0.4), -51rem 0 0 rgba(255, 255, 255, 0.4),
+    54rem 0 0 rgba(255, 255, 255, 0.4), -54rem 0 0 rgba(255, 255, 255, 0.4),
+    57rem 0 0 rgba(255, 255, 255, 0.4), -57rem 0 0 rgba(255, 255, 255, 0.4),
+    60rem 0 0 rgba(255, 255, 255, 0.4), -60rem 0 0 rgba(255, 255, 255, 0.4),
+    63rem 0 0 rgba(255, 255, 255, 0.4), -63rem 0 0 rgba(255, 255, 255, 0.4),
+    66rem 0 0 rgba(255, 255, 255, 0.4), -66rem 0 0 rgba(255, 255, 255, 0.4),
+    69rem 0 0 rgba(255, 255, 255, 0.4), -69rem 0 0 rgba(255, 255, 255, 0.4),
+    72rem 0 0 rgba(255, 255, 255, 0.4), -72rem 0 0 rgba(255, 255, 255, 0.4),
+    75rem 0 0 rgba(255, 255, 255, 0.4), -75rem 0 0 rgba(255, 255, 255, 0.4),
+    78rem 0 0 rgba(255, 255, 255, 0.4), -78rem 0 0 rgba(255, 255, 255, 0.4),
+    81rem 0 0 rgba(255, 255, 255, 0.4), -81rem 0 0 rgba(255, 255, 255, 0.4),
+    84rem 0 0 rgba(255, 255, 255, 0.4), -84rem 0 0 rgba(255, 255, 255, 0.4),
+    87rem 0 0 rgba(255, 255, 255, 0.4), -87rem 0 0 rgba(255, 255, 255, 0.4),
+    90rem 0 0 rgba(255, 255, 255, 0.4), -90rem 0 0 rgba(255, 255, 255, 0.4),
+    93rem 0 0 rgba(255, 255, 255, 0.4), -93rem 0 0 rgba(255, 255, 255, 0.4),
+    96rem 0 0 rgba(255, 255, 255, 0.4), -96rem 0 0 rgba(255, 255, 255, 0.4),
+    99rem 0 0 rgba(255, 255, 255, 0.4), -99rem 0 0 rgba(255, 255, 255, 0.4),
+    102rem 0 0 rgba(255, 255, 255, 0.4), -102rem 0 0 rgba(255, 255, 255, 0.4),
+    105rem 0 0 rgba(255, 255, 255, 0.4), -105rem 0 0 rgba(255, 255, 255, 0.4),
+    108rem 0 0 rgba(255, 255, 255, 0.4), -108rem 0 0 rgba(255, 255, 255, 0.4),
+    111rem 0 0 rgba(255, 255, 255, 0.4), -111rem 0 0 rgba(255, 255, 255, 0.4),
+    114rem 0 0 rgba(255, 255, 255, 0.4), -114rem 0 0 rgba(255, 255, 255, 0.4),
+    117rem 0 0 rgba(255, 255, 255, 0.4), -117rem 0 0 rgba(255, 255, 255, 0.4),
+    120rem 0 0 rgba(255, 255, 255, 0.4), -120rem 0 0 rgba(255, 255, 255, 0.4),
+    123rem 0 0 rgba(255, 255, 255, 0.4), -123rem 0 0 rgba(255, 255, 255, 0.4),
+    126rem 0 0 rgba(255, 255, 255, 0.4), -126rem 0 0 rgba(255, 255, 255, 0.4),
+    129rem 0 0 rgba(255, 255, 255, 0.4), -129rem 0 0 rgba(255, 255, 255, 0.4),
+    132rem 0 0 rgba(255, 255, 255, 0.4), -132rem 0 0 rgba(255, 255, 255, 0.4),
+    135rem 0 0 rgba(255, 255, 255, 0.4), -135rem 0 0 rgba(255, 255, 255, 0.4),
+    138rem 0 0 rgba(255, 255, 255, 0.4), -138rem 0 0 rgba(255, 255, 255, 0.4),
+    141rem 0 0 rgba(255, 255, 255, 0.4), -141rem 0 0 rgba(255, 255, 255, 0.4),
+    144rem 0 0 rgba(255, 255, 255, 0.4), -144rem 0 0 rgba(255, 255, 255, 0.4),
+    147rem 0 0 rgba(255, 255, 255, 0.4), -147rem 0 0 rgba(255, 255, 255, 0.4),
+    150rem 0 0 rgba(255, 255, 255, 0.4), -150rem 0 0 rgba(255, 255, 255, 0.4),
+    153rem 0 0 rgba(255, 255, 255, 0.4), -153rem 0 0 rgba(255, 255, 255, 0.4),
+    156rem 0 0 rgba(255, 255, 255, 0.4), -156rem 0 0 rgba(255, 255, 255, 0.4),
+    159rem 0 0 rgba(255, 255, 255, 0.4), -159rem 0 0 rgba(255, 255, 255, 0.4),
+    162rem 0 0 rgba(255, 255, 255, 0.4), -162rem 0 0 rgba(255, 255, 255, 0.4),
+    165rem 0 0 rgba(255, 255, 255, 0.4), -165rem 0 0 rgba(255, 255, 255, 0.4),
+    168rem 0 0 rgba(255, 255, 255, 0.4), -168rem 0 0 rgba(255, 255, 255, 0.4),
+    171rem 0 0 rgba(255, 255, 255, 0.4), -171rem 0 0 rgba(255, 255, 255, 0.4),
+    174rem 0 0 rgba(255, 255, 255, 0.4), -174rem 0 0 rgba(255, 255, 255, 0.4),
+    177rem 0 0 rgba(255, 255, 255, 0.4), -177rem 0 0 rgba(255, 255, 255, 0.4),
+    180rem 0 0 rgba(255, 255, 255, 0.4), -180rem 0 0 rgba(255, 255, 255, 0.4),
+    183rem 0 0 rgba(255, 255, 255, 0.4), -183rem 0 0 rgba(255, 255, 255, 0.4),
+    186rem 0 0 rgba(255, 255, 255, 0.4), -186rem 0 0 rgba(255, 255, 255, 0.4),
+    189rem 0 0 rgba(255, 255, 255, 0.4), -189rem 0 0 rgba(255, 255, 255, 0.4),
+    192rem 0 0 rgba(255, 255, 255, 0.4), -192rem 0 0 rgba(255, 255, 255, 0.4),
+    195rem 0 0 rgba(255, 255, 255, 0.4), -195rem 0 0 rgba(255, 255, 255, 0.4),
+    198rem 0 0 rgba(255, 255, 255, 0.4), -198rem 0 0 rgba(255, 255, 255, 0.4),
+    201rem 0 0 rgba(255, 255, 255, 0.4), -201rem 0 0 rgba(255, 255, 255, 0.4),
+    204rem 0 0 rgba(255, 255, 255, 0.4), -204rem 0 0 rgba(255, 255, 255, 0.4),
+    207rem 0 0 rgba(255, 255, 255, 0.4), -207rem 0 0 rgba(255, 255, 255, 0.4),
+    210rem 0 0 rgba(255, 255, 255, 0.4), -210rem 0 0 rgba(255, 255, 255, 0.4),
+    213rem 0 0 rgba(255, 255, 255, 0.4), -213rem 0 0 rgba(255, 255, 255, 0.4),
+    216rem 0 0 rgba(255, 255, 255, 0.4), -216rem 0 0 rgba(255, 255, 255, 0.4),
+    219rem 0 0 rgba(255, 255, 255, 0.4), -219rem 0 0 rgba(255, 255, 255, 0.4),
+    222rem 0 0 rgba(255, 255, 255, 0.4), -222rem 0 0 rgba(255, 255, 255, 0.4),
+    225rem 0 0 rgba(255, 255, 255, 0.4), -225rem 0 0 rgba(255, 255, 255, 0.4),
+    228rem 0 0 rgba(255, 255, 255, 0.4), -228rem 0 0 rgba(255, 255, 255, 0.4),
+    231rem 0 0 rgba(255, 255, 255, 0.4), -231rem 0 0 rgba(255, 255, 255, 0.4),
+    234rem 0 0 rgba(255, 255, 255, 0.4), -234rem 0 0 rgba(255, 255, 255, 0.4),
+    237rem 0 0 rgba(255, 255, 255, 0.4), -237rem 0 0 rgba(255, 255, 255, 0.4),
+    240rem 0 0 rgba(255, 255, 255, 0.4), -240rem 0 0 rgba(255, 255, 255, 0.4),
+    243rem 0 0 rgba(255, 255, 255, 0.4), -243rem 0 0 rgba(255, 255, 255, 0.4),
+    246rem 0 0 rgba(255, 255, 255, 0.4), -246rem 0 0 rgba(255, 255, 255, 0.4),
+    249rem 0 0 rgba(255, 255, 255, 0.4), -249rem 0 0 rgba(255, 255, 255, 0.4),
+    252rem 0 0 rgba(255, 255, 255, 0.4), -252rem 0 0 rgba(255, 255, 255, 0.4),
+    255rem 0 0 rgba(255, 255, 255, 0.4), -255rem 0 0 rgba(255, 255, 255, 0.4),
+    258rem 0 0 rgba(255, 255, 255, 0.4), -258rem 0 0 rgba(255, 255, 255, 0.4),
+    261rem 0 0 rgba(255, 255, 255, 0.4), -261rem 0 0 rgba(255, 255, 255, 0.4),
+    264rem 0 0 rgba(255, 255, 255, 0.4), -264rem 0 0 rgba(255, 255, 255, 0.4),
+    267rem 0 0 rgba(255, 255, 255, 0.4), -267rem 0 0 rgba(255, 255, 255, 0.4),
+    270rem 0 0 rgba(255, 255, 255, 0.4), -270rem 0 0 rgba(255, 255, 255, 0.4),
+    273rem 0 0 rgba(255, 255, 255, 0.4), -273rem 0 0 rgba(255, 255, 255, 0.4),
+    276rem 0 0 rgba(255, 255, 255, 0.4), -276rem 0 0 rgba(255, 255, 255, 0.4),
+    279rem 0 0 rgba(255, 255, 255, 0.4), -279rem 0 0 rgba(255, 255, 255, 0.4),
+    282rem 0 0 rgba(255, 255, 255, 0.4), -282rem 0 0 rgba(255, 255, 255, 0.4),
+    285rem 0 0 rgba(255, 255, 255, 0.4), -285rem 0 0 rgba(255, 255, 255, 0.4),
+    288rem 0 0 rgba(255, 255, 255, 0.4), -288rem 0 0 rgba(255, 255, 255, 0.4),
+    291rem 0 0 rgba(255, 255, 255, 0.4), -291rem 0 0 rgba(255, 255, 255, 0.4),
+    294rem 0 0 rgba(255, 255, 255, 0.4), -294rem 0 0 rgba(255, 255, 255, 0.4),
+    297rem 0 0 rgba(255, 255, 255, 0.4), -297rem 0 0 rgba(255, 255, 255, 0.4),
+    300rem 0 0 rgba(255, 255, 255, 0.4), -300rem 0 0 rgba(255, 255, 255, 0.4),
+    303rem 0 0 rgba(255, 255, 255, 0.4), -303rem 0 0 rgba(255, 255, 255, 0.4),
+    306rem 0 0 rgba(255, 255, 255, 0.4), -306rem 0 0 rgba(255, 255, 255, 0.4),
+    309rem 0 0 rgba(255, 255, 255, 0.4), -309rem 0 0 rgba(255, 255, 255, 0.4),
+    312rem 0 0 rgba(255, 255, 255, 0.4), -312rem 0 0 rgba(255, 255, 255, 0.4),
+    315rem 0 0 rgba(255, 255, 255, 0.4), -315rem 0 0 rgba(255, 255, 255, 0.4),
+    318rem 0 0 rgba(255, 255, 255, 0.4), -318rem 0 0 rgba(255, 255, 255, 0.4),
+    321rem 0 0 rgba(255, 255, 255, 0.4), -321rem 0 0 rgba(255, 255, 255, 0.4),
+    324rem 0 0 rgba(255, 255, 255, 0.4), -324rem 0 0 rgba(255, 255, 255, 0.4),
+    327rem 0 0 rgba(255, 255, 255, 0.4), -327rem 0 0 rgba(255, 255, 255, 0.4),
+    330rem 0 0 rgba(255, 255, 255, 0.4), -330rem 0 0 rgba(255, 255, 255, 0.4),
+    333rem 0 0 rgba(255, 255, 255, 0.4), -333rem 0 0 rgba(255, 255, 255, 0.4),
+    336rem 0 0 rgba(255, 255, 255, 0.4), -336rem 0 0 rgba(255, 255, 255, 0.4),
+    339rem 0 0 rgba(255, 255, 255, 0.4), -339rem 0 0 rgba(255, 255, 255, 0.4),
+    342rem 0 0 rgba(255, 255, 255, 0.4), -342rem 0 0 rgba(255, 255, 255, 0.4),
+    345rem 0 0 rgba(255, 255, 255, 0.4), -345rem 0 0 rgba(255, 255, 255, 0.4),
+    348rem 0 0 rgba(255, 255, 255, 0.4), -348rem 0 0 rgba(255, 255, 255, 0.4),
+    351rem 0 0 rgba(255, 255, 255, 0.4), -351rem 0 0 rgba(255, 255, 255, 0.4),
+    354rem 0 0 rgba(255, 255, 255, 0.4), -354rem 0 0 rgba(255, 255, 255, 0.4),
+    357rem 0 0 rgba(255, 255, 255, 0.4), -357rem 0 0 rgba(255, 255, 255, 0.4);
+  transition: 500ms ease all;
+}
+.navbar__item:first-child:nth-last-child(1):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(1) ~ li:last-child:hover:before {
+  left: 0%;
+}
+.navbar__item:first-child:nth-last-child(2):nth-child(1):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(2)
+  ~ li:nth-child(1):hover
+  ~ li:last-child:before {
+  left: 0%;
+}
+.navbar__item:first-child:nth-last-child(2):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(2) ~ li:last-child:hover:before {
+  left: 50%;
+}
+.navbar__item:first-child:nth-last-child(3):nth-child(1):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(3)
+  ~ li:nth-child(1):hover
+  ~ li:last-child:before {
+  left: 0%;
+}
+.navbar__item:first-child:nth-last-child(3):nth-child(2):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(3)
+  ~ li:nth-child(2):hover
+  ~ li:last-child:before {
+  left: 33.3333333333%;
+}
+.navbar__item:first-child:nth-last-child(3):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(3) ~ li:last-child:hover:before {
+  left: 66.6666666667%;
+}
+.navbar__item:first-child:nth-last-child(4):nth-child(1):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(4)
+  ~ li:nth-child(1):hover
+  ~ li:last-child:before {
+  left: 0%;
+}
+.navbar__item:first-child:nth-last-child(4):nth-child(2):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(4)
+  ~ li:nth-child(2):hover
+  ~ li:last-child:before {
+  left: 25%;
+}
+.navbar__item:first-child:nth-last-child(4):nth-child(3):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(4)
+  ~ li:nth-child(3):hover
+  ~ li:last-child:before {
+  left: 50%;
+}
+.navbar__item:first-child:nth-last-child(4):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(4) ~ li:last-child:hover:before {
+  left: 75%;
+}
+.navbar__item:first-child:nth-last-child(5):nth-child(1):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(5)
+  ~ li:nth-child(1):hover
+  ~ li:last-child:before {
+  left: 0%;
+}
+.navbar__item:first-child:nth-last-child(5):nth-child(2):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(5)
+  ~ li:nth-child(2):hover
+  ~ li:last-child:before {
+  left: 20%;
+}
+.navbar__item:first-child:nth-last-child(5):nth-child(3):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(5)
+  ~ li:nth-child(3):hover
+  ~ li:last-child:before {
+  left: 40%;
+}
+.navbar__item:first-child:nth-last-child(5):nth-child(4):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(5)
+  ~ li:nth-child(4):hover
+  ~ li:last-child:before {
+  left: 60%;
+}
+.navbar__item:first-child:nth-last-child(5):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(5) ~ li:last-child:hover:before {
+  left: 80%;
+}
+.navbar__item:first-child:nth-last-child(6):nth-child(1):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(6)
+  ~ li:nth-child(1):hover
+  ~ li:last-child:before {
+  left: 0%;
+}
+.navbar__item:first-child:nth-last-child(6):nth-child(2):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(6)
+  ~ li:nth-child(2):hover
+  ~ li:last-child:before {
+  left: 16.6666666667%;
+}
+.navbar__item:first-child:nth-last-child(6):nth-child(3):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(6)
+  ~ li:nth-child(3):hover
+  ~ li:last-child:before {
+  left: 33.3333333333%;
+}
+.navbar__item:first-child:nth-last-child(6):nth-child(4):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(6)
+  ~ li:nth-child(4):hover
+  ~ li:last-child:before {
+  left: 50%;
+}
+.navbar__item:first-child:nth-last-child(6):nth-child(5):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(6)
+  ~ li:nth-child(5):hover
+  ~ li:last-child:before {
+  left: 66.6666666667%;
+}
+.navbar__item:first-child:nth-last-child(6):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(6) ~ li:last-child:hover:before {
+  left: 83.3333333333%;
+}
+.navbar__item:first-child:nth-last-child(7):nth-child(1):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(7)
+  ~ li:nth-child(1):hover
+  ~ li:last-child:before {
+  left: 0%;
+}
+.navbar__item:first-child:nth-last-child(7):nth-child(2):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(7)
+  ~ li:nth-child(2):hover
+  ~ li:last-child:before {
+  left: 14.2857142857%;
+}
+.navbar__item:first-child:nth-last-child(7):nth-child(3):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(7)
+  ~ li:nth-child(3):hover
+  ~ li:last-child:before {
+  left: 28.5714285714%;
+}
+.navbar__item:first-child:nth-last-child(7):nth-child(4):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(7)
+  ~ li:nth-child(4):hover
+  ~ li:last-child:before {
+  left: 42.8571428571%;
+}
+.navbar__item:first-child:nth-last-child(7):nth-child(5):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(7)
+  ~ li:nth-child(5):hover
+  ~ li:last-child:before {
+  left: 57.1428571429%;
+}
+.navbar__item:first-child:nth-last-child(7):nth-child(6):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(7)
+  ~ li:nth-child(6):hover
+  ~ li:last-child:before {
+  left: 71.4285714286%;
+}
+.navbar__item:first-child:nth-last-child(7):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(7) ~ li:last-child:hover:before {
+  left: 85.7142857143%;
+}
+.navbar__item:first-child:nth-last-child(8):nth-child(1):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(8)
+  ~ li:nth-child(1):hover
+  ~ li:last-child:before {
+  left: 0%;
+}
+.navbar__item:first-child:nth-last-child(8):nth-child(2):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(8)
+  ~ li:nth-child(2):hover
+  ~ li:last-child:before {
+  left: 12.5%;
+}
+.navbar__item:first-child:nth-last-child(8):nth-child(3):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(8)
+  ~ li:nth-child(3):hover
+  ~ li:last-child:before {
+  left: 25%;
+}
+.navbar__item:first-child:nth-last-child(8):nth-child(4):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(8)
+  ~ li:nth-child(4):hover
+  ~ li:last-child:before {
+  left: 37.5%;
+}
+.navbar__item:first-child:nth-last-child(8):nth-child(5):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(8)
+  ~ li:nth-child(5):hover
+  ~ li:last-child:before {
+  left: 50%;
+}
+.navbar__item:first-child:nth-last-child(8):nth-child(6):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(8)
+  ~ li:nth-child(6):hover
+  ~ li:last-child:before {
+  left: 62.5%;
+}
+.navbar__item:first-child:nth-last-child(8):nth-child(7):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(8)
+  ~ li:nth-child(7):hover
+  ~ li:last-child:before {
+  left: 75%;
+}
+.navbar__item:first-child:nth-last-child(8):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(8) ~ li:last-child:hover:before {
+  left: 87.5%;
+}
+.navbar__item:first-child:nth-last-child(9):nth-child(1):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(9)
+  ~ li:nth-child(1):hover
+  ~ li:last-child:before {
+  left: 0%;
+}
+.navbar__item:first-child:nth-last-child(9):nth-child(2):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(9)
+  ~ li:nth-child(2):hover
+  ~ li:last-child:before {
+  left: 11.1111111111%;
+}
+.navbar__item:first-child:nth-last-child(9):nth-child(3):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(9)
+  ~ li:nth-child(3):hover
+  ~ li:last-child:before {
+  left: 22.2222222222%;
+}
+.navbar__item:first-child:nth-last-child(9):nth-child(4):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(9)
+  ~ li:nth-child(4):hover
+  ~ li:last-child:before {
+  left: 33.3333333333%;
+}
+.navbar__item:first-child:nth-last-child(9):nth-child(5):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(9)
+  ~ li:nth-child(5):hover
+  ~ li:last-child:before {
+  left: 44.4444444444%;
+}
+.navbar__item:first-child:nth-last-child(9):nth-child(6):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(9)
+  ~ li:nth-child(6):hover
+  ~ li:last-child:before {
+  left: 55.5555555556%;
+}
+.navbar__item:first-child:nth-last-child(9):nth-child(7):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(9)
+  ~ li:nth-child(7):hover
+  ~ li:last-child:before {
+  left: 66.6666666667%;
+}
+.navbar__item:first-child:nth-last-child(9):nth-child(8):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(9)
+  ~ li:nth-child(8):hover
+  ~ li:last-child:before {
+  left: 77.7777777778%;
+}
+.navbar__item:first-child:nth-last-child(9):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(9) ~ li:last-child:hover:before {
+  left: 88.8888888889%;
+}
+.navbar__item:first-child:nth-last-child(10):nth-child(1):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(10)
+  ~ li:nth-child(1):hover
+  ~ li:last-child:before {
+  left: 0%;
+}
+.navbar__item:first-child:nth-last-child(10):nth-child(2):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(10)
+  ~ li:nth-child(2):hover
+  ~ li:last-child:before {
+  left: 10%;
+}
+.navbar__item:first-child:nth-last-child(10):nth-child(3):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(10)
+  ~ li:nth-child(3):hover
+  ~ li:last-child:before {
+  left: 20%;
+}
+.navbar__item:first-child:nth-last-child(10):nth-child(4):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(10)
+  ~ li:nth-child(4):hover
+  ~ li:last-child:before {
+  left: 30%;
+}
+.navbar__item:first-child:nth-last-child(10):nth-child(5):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(10)
+  ~ li:nth-child(5):hover
+  ~ li:last-child:before {
+  left: 40%;
+}
+.navbar__item:first-child:nth-last-child(10):nth-child(6):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(10)
+  ~ li:nth-child(6):hover
+  ~ li:last-child:before {
+  left: 50%;
+}
+.navbar__item:first-child:nth-last-child(10):nth-child(7):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(10)
+  ~ li:nth-child(7):hover
+  ~ li:last-child:before {
+  left: 60%;
+}
+.navbar__item:first-child:nth-last-child(10):nth-child(8):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(10)
+  ~ li:nth-child(8):hover
+  ~ li:last-child:before {
+  left: 70%;
+}
+.navbar__item:first-child:nth-last-child(10):nth-child(9):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(10)
+  ~ li:nth-child(9):hover
+  ~ li:last-child:before {
+  left: 80%;
+}
+.navbar__item:first-child:nth-last-child(10):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(10) ~ li:last-child:hover:before {
+  left: 90%;
+}
+.navbar__item:first-child:nth-last-child(11):nth-child(1):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(11)
+  ~ li:nth-child(1):hover
+  ~ li:last-child:before {
+  left: 0%;
+}
+.navbar__item:first-child:nth-last-child(11):nth-child(2):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(11)
+  ~ li:nth-child(2):hover
+  ~ li:last-child:before {
+  left: 9.0909090909%;
+}
+.navbar__item:first-child:nth-last-child(11):nth-child(3):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(11)
+  ~ li:nth-child(3):hover
+  ~ li:last-child:before {
+  left: 18.1818181818%;
+}
+.navbar__item:first-child:nth-last-child(11):nth-child(4):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(11)
+  ~ li:nth-child(4):hover
+  ~ li:last-child:before {
+  left: 27.2727272727%;
+}
+.navbar__item:first-child:nth-last-child(11):nth-child(5):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(11)
+  ~ li:nth-child(5):hover
+  ~ li:last-child:before {
+  left: 36.3636363636%;
+}
+.navbar__item:first-child:nth-last-child(11):nth-child(6):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(11)
+  ~ li:nth-child(6):hover
+  ~ li:last-child:before {
+  left: 45.4545454545%;
+}
+.navbar__item:first-child:nth-last-child(11):nth-child(7):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(11)
+  ~ li:nth-child(7):hover
+  ~ li:last-child:before {
+  left: 54.5454545455%;
+}
+.navbar__item:first-child:nth-last-child(11):nth-child(8):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(11)
+  ~ li:nth-child(8):hover
+  ~ li:last-child:before {
+  left: 63.6363636364%;
+}
+.navbar__item:first-child:nth-last-child(11):nth-child(9):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(11)
+  ~ li:nth-child(9):hover
+  ~ li:last-child:before {
+  left: 72.7272727273%;
+}
+.navbar__item:first-child:nth-last-child(11):nth-child(10):hover
+  ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(11)
+  ~ li:nth-child(10):hover
+  ~ li:last-child:before {
+  left: 81.8181818182%;
+}
+.navbar__item:first-child:nth-last-child(11):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(11) ~ li:last-child:hover:before {
+  left: 90.9090909091%;
+}

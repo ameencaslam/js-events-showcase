@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Events Showcase</title>
+    <link rel="stylesheet" type="text/css" href="events.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="text-shadows.css" />
+    <link rel="icon" href="accept.png" />
+    <link rel="stylesheet" href="scroll.css" />
+    <link rel="stylesheet" href="console.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="cursor.css" />
+    <link rel="stylesheet" href="passform.css" />
+    <link rel="stylesheet" href="mode.css" />
+  </head>
+  <body>
+    <!-- cursor test start -->
+    <div class="cursor"></div>
+    <div id="home"></div>
+    <!-- navbar start-->
+    <div class="header">
+      <!-- <div class="header__logo">
+        <strong>LOGO</strong>
+      </div> -->
+      <nav class="navbar">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__link"><span>Home</span></a>
+          </li>
+          <li class="navbar__item">
+            <a href="#mouse-events" class="navbar__link"
+              ><span>Mouse Events</span></a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#scroll-events" class="navbar__link"
+              ><span>Scroll Events</span></a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#keyboard-events" class="navbar__link"
+              ><span>Keyboard Events</span></a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#form-events" class="navbar__link"
+              ><span>Form Events</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- navbar end -->
+
+    <button id="toggleConsoleButton" class="button-30">Show Console</button
+    ><!--console show/hide button-->
+    <button id="toggleModeButton" class="button-30">Show Console</button
+    ><!--dark/night mode button-->
+    <script src="mode.js"></script>
+
+    <!-- console box start -->
+    <div id="consoleDiv"></div>
+    <script src="console.js"></script>
+    <!-- console box end -->
+
+    <!-- main heading -->
+    <div class="main-heading long sound-title">
+      <h1 class="hover-this">JavaScript<br />Events<br />Showcase</h1>
+    </div>
+
+    <!-- Mouse Events -->
+    <div class="event-container" id="mouse-events">
+      <h2 class="sound-title retro hover-this">Mouse Events</h2>
+      <div class="event-example autoBlur">
+        <h3>onclick</h3>
+        <p>Triggered when a user clicks an element.</p>
+        <button
+          class="event-trigger button-30"
+          onclick="console.log('You clicked me!')"
+        >
+          Click me!
+        </button>
+      </div>
+      <div class="event-example autoBlur">
+        <h3>ondblclick</h3>
+        <p>Triggered when a user double-clicks an element.</p>
+        <button
+          class="event-trigger button-30"
+          ondblclick="console.log('You double-clicked me!')"
+        >
+          Double-click me!
+        </button>
+      </div>
+      <div class="event-example autoBlur">
+        <h3>onmousedown</h3>
+        <p>Triggered when a user presses the mouse button over an element.</p>
+        <button
+          class="event-trigger button-30"
+          onmousedown="console.log('You pressed the mouse button!')"
+        >
+          Press me!
+        </button>
+      </div>
+      <div class="event-example autoBlur">
+        <h3>onmouseup</h3>
+        <p>Triggered when a user releases the mouse button over an element.</p>
+        <button
+          class="event-trigger button-30"
+          onmouseup="console.log('You released the mouse button!')"
+        >
+          Release me!
+        </button>
+      </div>
+      <div class="event-example autoBlur">
+        <h3>onmouseover</h3>
+        <p>Triggered when a user moves the mouse pointer over an element.</p>
+        <div
+          class="event-trigger sample-element"
+          onmouseover="console.log('You moved over me!')"
+        ></div>
+      </div>
+      <div class="event-example autoBlur">
+        <h3>onmouseout</h3>
+        <p>
+          Triggered when a user moves the mouse pointer away from an element.
+        </p>
+        <div
+          class="event-trigger sample-element"
+          onmouseout="console.log('You moved away from me!')"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Scroll Events -->
+    <div class="event-container" id="scroll-events">
+      <h2 class="sound-title retro hover-this">Scroll Events</h2>
+      <div class="event-example autoBlur">
+        <h3>onscroll</h3>
+        <p>Triggered when the user scrolls the page.</p>
+        <button
+          id="scroll-toggle"
+          class="button-30"
+          onclick="toggleScrollEvent()"
+        >
+          Enable Scroll Event
+        </button>
+        <script>
+          let scrollEnabled = false;
+          window.onscroll = null;
+
+          function toggleScrollEvent() {
+            if (scrollEnabled) {
+              window.onscroll = null;
+              document.getElementById("scroll-toggle").innerHTML =
+                "Enable Scroll Event";
+              scrollEnabled = false;
+            } else {
+              window.onscroll = function () {
+                console.log("You scrolled the page!");
+              };
+              document.getElementById("scroll-toggle").innerHTML =
+                "Disable Scroll Event";
+              scrollEnabled = true;
+            }
+          }
+        </script>
+      </div>
+    </div>
+
+    <!-- Keyboard Events -->
+    <div class="event-container" id="keyboard-events">
+      <h2 class="sound-title retro hover-this">Keyboard Events</h2>
+      <div class="event-example autoBlur">
+        <h3>onkeydown</h3>
+        <p>Triggered when a user presses a key on the keyboard.</p>
+        <input
+          type="text"
+          class="event-trigger"
+          onkeydown="console.log('You pressed a key!')"
+          placeholder="Press a key..."
+        />
+      </div>
+      <div class="event-example autoBlur">
+        <h3>onkeyup</h3>
+        <p>Triggered when a user releases a key on the keyboard.</p>
+        <input
+          type="text"
+          class="event-trigger"
+          onkeyup="console.log('You released a key!')"
+          placeholder="Release a key..."
+        />
+      </div>
+      <div class="event-example autoBlur">
+        <h3>onkeypress</h3>
+        <p>Triggered when a user presses and releases a key on the keyboard.</p>
+        <input
+          type="text"
+          class="event-trigger"
+          id="onkeypress__input-box"
+          onkeypress="console.log('You pressed and released a key!')"
+          placeholder="Press and release a key..."
+        />
+      </div>
+    </div>
+
+    <!-- Form Events -->
+    <div class="event-container" id="form-events">
+      <h2 class="sound-title retro hover-this">Form Events</h2>
+      <div class="event-example autoBlur">
+        <h3>onsubmit</h3>
+        <p>Triggered when a user submits a form.</p>
+        <form onsubmit="alert('You submitted the form!')">
+          <input type="text" name="username" placeholder="Username" />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="event-example autoBlur">
+        <h3>onreset</h3>
+        <p>Triggered when a user resets a form.</p>
+        <form onreset="console.log('You reset the form!')">
+          <input type="text" name="username" placeholder="Username" />
+          <input type="reset" value="Reset" />
+        </form>
+      </div>
+      <div class="event-example autoBlur">
+        <h3>onchange</h3>
+        <p>Triggered when a user changes the value of a form element.</p>
+        <select onchange="console.log('You changed the selection!')">
+          <option class="dd-option" value="">Select an option</option>
+          <option class="dd-option" value="option1">Option 1</option>
+          <option class="dd-option" value="option2">Option 2</option>
+        </select>
+      </div>
+      <div class="event-example autoBlur">
+        <h3>onfocus</h3>
+        <p>Triggered when a user focuses on a form element.</p>
+        <input
+          type="text"
+          onfocus="console.log('You focused on the input!')"
+          placeholder="Focus on me!"
+        />
+      </div>
+      <div class="event-example autoBlur">
+        <h3>onblur</h3>
+        <p>Triggered when a user loses focus on a form element.</p>
+        <input
+          type="text"
+          onblur="console.log('You lost focus on the input!')"
+          placeholder="Lose focus on me!"
+        />
+      </div>
+      <div class="event-example autoBlur">
+        <h3>Validation</h3>
+        <p>Validating whether input has met given conditions</p>
+        <form
+          id="passwordForm"
+          class="event-trigger"
+          onsubmit="alert('Login Successful')"
+        >
+          <div class="validation__pass-div">
+            <input type="password" id="password" placeholder="Password" />
+          </div>
+
+          <div class="validation__pass-div">
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Confirm Password"
+            />
+          </div>
+
+          <ul id="passwordRequirements">
+            <li id="length" class="requirement">At least 8 characters</li>
+            <li id="uppercase" class="requirement">
+              At least one uppercase letter
+            </li>
+            <li id="lowercase" class="requirement">
+              At least one lowercase letter
+            </li>
+            <li id="special" class="requirement">
+              At least one special character
+            </li>
+            <li id="number" class="requirement">At least one number</li>
+            <li id="match" class="requirement">Passwords match</li>
+          </ul>
+
+          <button type="submit" id="submitButton" class="button-30" disabled>
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="end-card deep sound-title">
+      <h1 class="autoShow hover-this">End</h1>
+    </div>
+    <script src="passform.js"></script>
+    <script src="cursor.js"></script>
+    <!-- cursor test end -->
+  </body>
+</html>
