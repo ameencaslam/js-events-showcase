@@ -116,6 +116,13 @@
   #menuToggle {
     top: 33px !important;
   }
+
+  .event-container > h2 {
+    text-align: end;
+    padding-right: 2rem;
+    padding-left: 5rem;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 400px) {
@@ -129,5 +136,10 @@
 
   .main-heading {
     font-size: 1.6rem;
+  }
+
+  .end-card > h1 {
+    letter-spacing: 0;
+    font-size: 4rem;
   }
 }
