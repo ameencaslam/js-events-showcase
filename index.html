@@ -258,7 +258,7 @@
       <div class="event-example autoBlur">
         <h3>onsubmit</h3>
         <p>Triggered when a user submits a form.</p>
-        <form onsubmit="alert('You submitted the form!')">
+        <form onsubmit="event.preventDefault(); alert('You submitted the form!')">
           <input type="text" name="username" placeholder="Username" />
           <input type="submit" value="Submit" />
         </form>
